@@ -24,7 +24,7 @@
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
-
+		<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script>
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -37,24 +37,9 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section data-state="soothe">
-					<h1>Data Mining</h1>
-					<h3>Tareas comúnes de preprocesamiento</h3>
-					<p>
-						<h5>Presentado por: Jean Tejeda y Gustavo Henriquez</h5>
-					</p>
-				</section>
-
-				<section data-state="alert">
-					<h2>Tipos de tareas que vamos a tratar</h2>
-					<p>
-						<ul>
-							<li>Filter (trad. Filtrado).</li>
-							<li>Extraction (trad. Extracción).</li>
-							<li>Reduction (trad. Reducción).</li>
-						</ul>
-					</p>
-				</section>
+				<section appml-include-html="slides/s1.html" data-state="soothe"></section>
+				
+				<section appml-include-html="slides/s2.html" data-state="alert">	</section>
 
 				<section data-state="cobalt">
 					<h2>Pero antes de todo... ¿Por qué preprocesar un DataSet?</h2>
